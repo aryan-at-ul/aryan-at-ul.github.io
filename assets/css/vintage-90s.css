@@ -1,0 +1,249 @@
+/* ==========================================================================
+   1990s Vintage Website Styling
+   ========================================================================== */
+
+/* Classic 90s color scheme */
+body {
+  background-color: #c0c0c0 !important;
+  background-image: none !important;
+  font-family: "Times New Roman", Times, serif !important;
+  color: #000080 !important;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Classic blue links */
+a {
+  color: #0000ff !important;
+  text-decoration: underline !important;
+}
+
+a:visited {
+  color: #800080 !important;
+}
+
+a:hover {
+  color: #ff0000 !important;
+  background-color: #ffff00 !important;
+}
+
+/* Classic heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #000080 !important;
+  font-family: "Times New Roman", Times, serif !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+h1 {
+  font-size: 24px !important;
+  text-align: center !important;
+}
+
+h2 {
+  font-size: 20px !important;
+}
+
+/* Classic borders */
+.page, .archive, article, .masthead, .sidebar {
+  border: 3px solid #000080 !important;
+  background-color: #ffffff !important;
+  padding: 10px !important;
+  margin: 10px 0 !important;
+}
+
+/* Navigation styling */
+.masthead {
+  background-color: #000080 !important;
+  border: 3px solid #000000 !important;
+}
+
+.masthead a {
+  color: #ffff00 !important;
+  font-weight: bold !important;
+}
+
+.masthead a:hover {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #e0e0e0 !important;
+  border: 2px dashed #000080 !important;
+}
+
+/* Classic table-like feel */
+.page__inner-wrap {
+  background-color: #ffffff !important;
+  border: 2px solid #000080 !important;
+  padding: 15px !important;
+}
+
+/* Classic button styling */
+.btn, button {
+  background-color: #c0c0c0 !important;
+  border: 2px outset #c0c0c0 !important;
+  color: #000080 !important;
+  font-weight: bold !important;
+  padding: 5px 10px !important;
+}
+
+.btn:hover, button:hover {
+  background-color: #a0a0a0 !important;
+  border: 2px inset #a0a0a0 !important;
+}
+
+/* Classic code blocks */
+code, pre {
+  background-color: #f0f0f0 !important;
+  border: 1px solid #000080 !important;
+  font-family: "Courier New", Courier, monospace !important;
+  color: #000000 !important;
+}
+
+/* Classic list styling */
+ul, ol {
+  margin-left: 30px !important;
+}
+
+li {
+  margin: 5px 0 !important;
+}
+
+/* Classic blockquote */
+blockquote {
+  border-left: 4px solid #000080 !important;
+  background-color: #f0f0f0 !important;
+  padding: 10px !important;
+  margin: 10px 0 !important;
+  font-style: italic !important;
+}
+
+/* Classic horizontal rules */
+hr {
+  border: none !important;
+  border-top: 2px solid #000080 !important;
+  margin: 20px 0 !important;
+}
+
+/* Archive items */
+.archive__item {
+  border-bottom: 1px dotted #000080 !important;
+  padding: 10px 0 !important;
+}
+
+.archive__item-title a {
+  color: #0000ff !important;
+  font-weight: bold !important;
+}
+
+/* Classic footer */
+.footer {
+  background-color: #c0c0c0 !important;
+  border-top: 3px solid #000080 !important;
+  text-align: center !important;
+  font-size: 12px !important;
+}
+
+/* Classic author profile */
+.author__avatar img {
+  border: 3px solid #000080 !important;
+}
+
+/* Remove modern shadows and gradients */
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Classic scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px solid #000080;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border: 1px solid #000080;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}
+
+/* Classic page title */
+.page__title {
+  color: #000080 !important;
+  text-align: center !important;
+  text-decoration: underline !important;
+  font-size: 28px !important;
+}
+
+/* Classic meta information */
+.page__meta {
+  color: #808080 !important;
+  font-size: 12px !important;
+}
+
+/* Classic publication styling */
+.archive__item-excerpt {
+  color: #000000 !important;
+  font-style: italic !important;
+}
+
+/* Classic contact info */
+strong {
+  color: #000080 !important;
+  font-weight: bold !important;
+}
+
+/* Classic navigation menu */
+.nav__list {
+  background-color: #000080 !important;
+}
+
+.nav__item a {
+  color: #ffff00 !important;
+  padding: 5px 10px !important;
+  display: block !important;
+}
+
+.nav__item a:hover {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+/* Classic sidebar links */
+.sidebar a {
+  color: #0000ff !important;
+}
+
+/* Remove rounded corners */
+* {
+  border-radius: 0 !important;
+}
+
+/* Classic table styling if any */
+table {
+  border: 2px solid #000080 !important;
+  border-collapse: collapse !important;
+}
+
+th, td {
+  border: 1px solid #000080 !important;
+  padding: 5px !important;
+  background-color: #ffffff !important;
+}
+
+th {
+  background-color: #c0c0c0 !important;
+  font-weight: bold !important;
+}
+
