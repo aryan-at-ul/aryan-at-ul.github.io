@@ -1,249 +1,931 @@
 /* ==========================================================================
    1990s Vintage Website Styling
+   Override CSS for Minimal Mistakes Jekyll Theme
+   v3 — Fixes white border around page, nav link boxes, all page types
    ========================================================================== */
 
-/* Classic 90s color scheme */
-body {
-  background-color: #c0c0c0 !important;
-  background-image: none !important;
-  font-family: "Times New Roman", Times, serif !important;
-  color: #000080 !important;
-  margin: 0;
-  padding: 10px;
-}
+/* ==========================================================================
+   1. RESET
+   ========================================================================== */
 
-/* Classic blue links */
-a {
-  color: #0000ff !important;
-  text-decoration: underline !important;
-}
-
-a:visited {
-  color: #800080 !important;
-}
-
-a:hover {
-  color: #ff0000 !important;
-  background-color: #ffff00 !important;
-}
-
-/* Classic heading styles */
-h1, h2, h3, h4, h5, h6 {
-  color: #000080 !important;
-  font-family: "Times New Roman", Times, serif !important;
-  font-weight: bold !important;
-  text-decoration: underline !important;
-}
-
-h1 {
-  font-size: 24px !important;
-  text-align: center !important;
-}
-
-h2 {
-  font-size: 20px !important;
-}
-
-/* Classic borders */
-.page, .archive, article, .masthead, .sidebar {
-  border: 3px solid #000080 !important;
-  background-color: #ffffff !important;
-  padding: 10px !important;
-  margin: 10px 0 !important;
-}
-
-/* Navigation styling */
-.masthead {
-  background-color: #000080 !important;
-  border: 3px solid #000000 !important;
-}
-
-.masthead a {
-  color: #ffff00 !important;
-  font-weight: bold !important;
-}
-
-.masthead a:hover {
-  background-color: #ff0000 !important;
-  color: #ffffff !important;
-}
-
-/* Sidebar styling */
-.sidebar {
-  background-color: #e0e0e0 !important;
-  border: 2px dashed #000080 !important;
-}
-
-/* Classic table-like feel */
-.page__inner-wrap {
-  background-color: #ffffff !important;
-  border: 2px solid #000080 !important;
-  padding: 15px !important;
-}
-
-/* Classic button styling */
-.btn, button {
-  background-color: #c0c0c0 !important;
-  border: 2px outset #c0c0c0 !important;
-  color: #000080 !important;
-  font-weight: bold !important;
-  padding: 5px 10px !important;
-}
-
-.btn:hover, button:hover {
-  background-color: #a0a0a0 !important;
-  border: 2px inset #a0a0a0 !important;
-}
-
-/* Classic code blocks */
-code, pre {
-  background-color: #f0f0f0 !important;
-  border: 1px solid #000080 !important;
-  font-family: "Courier New", Courier, monospace !important;
-  color: #000000 !important;
-}
-
-/* Classic list styling */
-ul, ol {
-  margin-left: 30px !important;
-}
-
-li {
-  margin: 5px 0 !important;
-}
-
-/* Classic blockquote */
-blockquote {
-  border-left: 4px solid #000080 !important;
-  background-color: #f0f0f0 !important;
-  padding: 10px !important;
-  margin: 10px 0 !important;
-  font-style: italic !important;
-}
-
-/* Classic horizontal rules */
-hr {
-  border: none !important;
-  border-top: 2px solid #000080 !important;
-  margin: 20px 0 !important;
-}
-
-/* Archive items */
-.archive__item {
-  border-bottom: 1px dotted #000080 !important;
-  padding: 10px 0 !important;
-}
-
-.archive__item-title a {
-  color: #0000ff !important;
-  font-weight: bold !important;
-}
-
-/* Classic footer */
-.footer {
-  background-color: #c0c0c0 !important;
-  border-top: 3px solid #000080 !important;
-  text-align: center !important;
-  font-size: 12px !important;
-}
-
-/* Classic author profile */
-.author__avatar img {
-  border: 3px solid #000080 !important;
-}
-
-/* Remove modern shadows and gradients */
-* {
-  box-shadow: none !important;
-  text-shadow: none !important;
-  background-image: none !important;
-}
-
-/* Classic scrollbar (webkit) */
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-::-webkit-scrollbar-track {
-  background: #c0c0c0;
-  border: 1px solid #000080;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #808080;
-  border: 1px solid #000080;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #606060;
-}
-
-/* Classic page title */
-.page__title {
-  color: #000080 !important;
-  text-align: center !important;
-  text-decoration: underline !important;
-  font-size: 28px !important;
-}
-
-/* Classic meta information */
-.page__meta {
-  color: #808080 !important;
-  font-size: 12px !important;
-}
-
-/* Classic publication styling */
-.archive__item-excerpt {
-  color: #000000 !important;
-  font-style: italic !important;
-}
-
-/* Classic contact info */
-strong {
-  color: #000080 !important;
-  font-weight: bold !important;
-}
-
-/* Classic navigation menu */
-.nav__list {
-  background-color: #000080 !important;
-}
-
-.nav__item a {
-  color: #ffff00 !important;
-  padding: 5px 10px !important;
-  display: block !important;
-}
-
-.nav__item a:hover {
-  background-color: #ff0000 !important;
-  color: #ffffff !important;
-}
-
-/* Classic sidebar links */
-.sidebar a {
-  color: #0000ff !important;
-}
-
-/* Remove rounded corners */
-* {
-  border-radius: 0 !important;
-}
-
-/* Classic table styling if any */
-table {
-  border: 2px solid #000080 !important;
-  border-collapse: collapse !important;
-}
-
-th, td {
-  border: 1px solid #000080 !important;
-  padding: 5px !important;
-  background-color: #ffffff !important;
-}
-
-th {
-  background-color: #c0c0c0 !important;
-  font-weight: bold !important;
-}
-
+   *, *::before, *::after {
+    box-sizing: border-box !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  html {
+    background-color: #000080 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  
+  body {
+    background-color: #c0c0c0 !important;
+    background-image: none !important;
+    font-family: "Times New Roman", Times, serif !important;
+    color: #000080 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 56px !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  
+  html::before, html::after,
+  body::before, body::after {
+    display: none !important;
+    content: none !important;
+  }
+  
+  /* ==========================================================================
+     2. MASTHEAD — True full-width, no white border
+     ========================================================================== */
+  
+  .masthead {
+    background: #000080 !important;
+    background-color: #000080 !important;
+    background-image: none !important;
+    border: none !important;
+    border-bottom: 3px solid #000000 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: auto !important;
+    min-height: 0 !important;
+    z-index: 1000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+  
+  .masthead__inner-wrap {
+    background: #000080 !important;
+    background-color: #000080 !important;
+    background-image: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 0.75em !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    min-height: 53px !important;
+  }
+  
+  .masthead__menu {
+    background: #000080 !important;
+    background-color: #000080 !important;
+    background-image: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* ==========================================================================
+     3. GREEDY NAV — All links visible, no hamburger, no white boxes
+     ========================================================================== */
+  
+  .greedy-nav {
+    background: #000080 !important;
+    background-color: #000080 !important;
+    background-image: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  
+  /* Site title */
+  .greedy-nav .site-title {
+    color: #ffff00 !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    font-family: "Times New Roman", Times, serif !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    margin-right: 2em !important;
+    padding: 0.5em 0 !important;
+    flex-shrink: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  
+  .greedy-nav .site-title:hover {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+  }
+  
+  /* Visible links */
+  .greedy-nav .visible-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow: visible !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    flex: 0 1 auto !important;
+  }
+  
+  .greedy-nav .visible-links li {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    list-style: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .greedy-nav .visible-links li a {
+    color: #ffff00 !important;
+    font-weight: bold !important;
+    font-family: "Times New Roman", Times, serif !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    text-decoration: none !important;
+    padding: 0.5em 0.75em !important;
+    display: block !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    white-space: nowrap !important;
+  }
+  
+  .greedy-nav .visible-links li a:hover {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+  }
+  
+  /* KILL hamburger button completely */
+  .greedy-nav__toggle {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    pointer-events: none !important;
+  }
+  
+  button.greedy-nav__toggle {
+    display: none !important;
+  }
+  
+  .greedy-nav .navicon,
+  .greedy-nav .navicon::before,
+  .greedy-nav .navicon::after,
+  .navicon {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  /* Hidden links — show them inline, NO dropdown box, NO white background */
+  .greedy-nav .hidden-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+    border: none !important;
+    box-shadow: none !important;
+    /* Kill the dropdown arrow pseudo-elements */
+    min-width: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+  }
+  
+  /* Kill the dropdown arrow */
+  .greedy-nav .hidden-links::before,
+  .greedy-nav .hidden-links::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+  }
+  
+  .greedy-nav .hidden-links.hidden {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .greedy-nav .hidden-links li {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    list-style: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .greedy-nav .hidden-links li a {
+    color: #ffff00 !important;
+    font-weight: bold !important;
+    font-family: "Times New Roman", Times, serif !important;
+    text-shadow: 1px 1px 1px #000 !important;
+    text-decoration: none !important;
+    padding: 0.5em 0.75em !important;
+    display: block !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    white-space: nowrap !important;
+  }
+  
+  .greedy-nav .hidden-links li a:hover {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+  }
+  
+  /* Search toggle */
+  .greedy-nav .search__toggle {
+    color: #ffff00 !important;
+    background: transparent !important;
+    border: none !important;
+    display: none !important;
+  }
+  
+  .masthead__menu-item,
+  .masthead__menu-item--lg {
+    background: transparent !important;
+    border: none !important;
+  }
+  
+  /* ==========================================================================
+     4. SIDEBAR
+     ========================================================================== */
+  
+  .sidebar {
+    background-color: #e0e0e0 !important;
+    background-image: none !important;
+    border: 2px dashed #000080 !important;
+    padding: 15px !important;
+    z-index: 100 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+  
+  .sidebar::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+  }
+  
+  .sidebar a {
+    color: #0000ff !important;
+  }
+  
+  .sidebar a:hover {
+    color: #ff0000 !important;
+    background-color: #ffff00 !important;
+  }
+  
+  .author__name {
+    color: #000080 !important;
+    font-family: "Times New Roman", Times, serif !important;
+    font-weight: bold !important;
+  }
+  
+  .author__bio {
+    color: #000080 !important;
+    font-family: "Times New Roman", Times, serif !important;
+  }
+  
+  .author__avatar img {
+    border: 3px solid #000080 !important;
+  }
+  
+  .author__urls-wrapper,
+  .author__urls,
+  .author__urls li {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  
+  /* Desktop sidebar */
+  @media screen and (min-width: 1024px) {
+    .sidebar,
+    .sidebar.sticky {
+      position: fixed !important;
+      left: 0 !important;
+      top: 56px !important;
+      width: 250px !important;
+      height: calc(100vh - 56px) !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
+      margin: 0 !important;
+      float: none !important;
+      z-index: 100 !important;
+    }
+  }
+  
+  /* Mobile sidebar */
+  @media screen and (max-width: 1023px) {
+    .sidebar {
+      position: relative !important;
+      float: none !important;
+      width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      top: auto !important;
+      margin: 0 0 15px 0 !important;
+    }
+  }
+  
+  /* ==========================================================================
+     5. MAIN CONTENT AREA
+     ========================================================================== */
+  
+  #main {
+    background-color: #c0c0c0 !important;
+    background-image: none !important;
+    margin: 0 !important;
+    padding: 15px !important;
+    margin-top: 0 !important;
+    padding-top: 15px !important;
+    max-width: none !important;
+    width: 100% !important;
+    clear: both !important;
+  }
+  
+  .page {
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 15px !important;
+    padding-right: 15px !important;
+    margin-right: 0 !important;
+    background-color: #ffffff !important;
+    border: 3px solid #000080 !important;
+  }
+  
+  .page__inner-wrap {
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    background-color: #ffffff !important;
+  }
+  
+  .page__content {
+    float: none !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+  }
+  
+  .page__meta {
+    float: none !important;
+    width: 100% !important;
+    color: #808080 !important;
+    font-size: 12px !important;
+  }
+  
+  .page__share {
+    float: none !important;
+    width: 100% !important;
+  }
+  
+  .archive {
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 15px !important;
+    padding-right: 15px !important;
+    background-color: #ffffff !important;
+    border: 3px solid #000080 !important;
+  }
+  
+  article {
+    background-color: #ffffff !important;
+  }
+  
+  .initial-content,
+  .search-content {
+    background-color: #c0c0c0 !important;
+    max-width: none !important;
+  }
+  
+  /* Desktop: sidebar present */
+  @media screen and (min-width: 1024px) {
+    /* Sidebar is INSIDE #main, so target content AFTER sidebar */
+    .sidebar ~ .page,
+    .sidebar ~ .archive,
+    .sidebar ~ article,
+    .sidebar.sticky ~ .page,
+    .sidebar.sticky ~ .archive,
+    .sidebar.sticky ~ article {
+      margin-left: 260px !important;
+      width: calc(100% - 260px) !important;
+      max-width: calc(100% - 260px) !important;
+    }
+  
+    /* General #main — pages without sidebar use full width by default */
+    #main {
+      margin-left: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  
+    .page,
+    .archive {
+      width: 100% !important;
+      max-width: 100% !important;
+      float: none !important;
+    }
+  
+    .page__inner-wrap {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 1023px) {
+    #main {
+      margin-left: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  
+    .page,
+    .archive {
+      width: 100% !important;
+      max-width: 100% !important;
+      float: none !important;
+    }
+  }
+  
+  /* ==========================================================================
+     6. DETECT SIDEBAR AND ADJUST LAYOUT
+     Uses the adjacent sibling combinator since sidebar comes before #main
+     in Minimal Mistakes HTML structure
+     ========================================================================== */
+  
+  /* 
+     Minimal Mistakes HTML structure:
+     <div class="sidebar">...</div>
+     <div id="main">...</div>
+     <div class="page__footer">...</div>
+     
+     We use .sidebar ~ #main to target #main ONLY when sidebar exists.
+     When there's no sidebar, #main gets default full-width styles.
+  */
+  
+  @media screen and (min-width: 1024px) {
+    /* Sidebar is INSIDE #main, so target content AFTER sidebar */
+    /* This is a duplicate of the rule above, but keeping for specificity */
+    .sidebar ~ article,
+    .sidebar.sticky ~ article,
+    .sidebar ~ .page,
+    .sidebar.sticky ~ .page {
+      margin-left: 260px !important;
+      width: calc(100% - 260px) !important;
+      max-width: calc(100% - 260px) !important;
+    }
+  
+    /* Footer WITH sidebar */
+    .sidebar ~ .page__footer,
+    .sidebar.sticky ~ .page__footer,
+    .sidebar ~ footer,
+    .sidebar.sticky ~ footer {
+      margin-left: 260px !important;
+      width: calc(100% - 260px) !important;
+    }
+  }
+  
+  /* ==========================================================================
+     7. FOOTER
+     ========================================================================== */
+  
+  .page__footer,
+  footer {
+    background-color: #c0c0c0 !important;
+    background-image: none !important;
+    border-top: 3px solid #000080 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    padding: 15px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    clear: both !important;
+  }
+  
+  .page__footer .page__footer-follow,
+  .page__footer .page__footer-copyright {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .page__footer,
+    footer {
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+  }
+  
+  .page__footer hr,
+  footer hr {
+    border: none !important;
+    border-top: 2px solid #000080 !important;
+    margin: 10px auto !important;
+    width: 80% !important;
+  }
+  
+  /* ==========================================================================
+     8. CLASSIC 90s TYPOGRAPHY
+     ========================================================================== */
+  
+  a {
+    color: #0000ff !important;
+    text-decoration: underline !important;
+  }
+  
+  a:visited {
+    color: #800080 !important;
+  }
+  
+  a:hover {
+    color: #ff0000 !important;
+    background-color: #ffff00 !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #000080 !important;
+    font-family: "Times New Roman", Times, serif !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+  }
+  
+  h1, .page__title {
+    font-size: 24px !important;
+    text-align: center !important;
+  }
+  
+  h2 {
+    font-size: 20px !important;
+  }
+  
+  h3 {
+    font-size: 18px !important;
+  }
+  
+  /* ==========================================================================
+     9. CLASSIC 90s UI ELEMENTS
+     ========================================================================== */
+  
+  .btn, button, input[type="submit"] {
+    background-color: #c0c0c0 !important;
+    border: 2px outset #c0c0c0 !important;
+    color: #000080 !important;
+    font-weight: bold !important;
+    padding: 5px 10px !important;
+    font-family: "Times New Roman", Times, serif !important;
+    background-image: none !important;
+  }
+  
+  .btn:hover, button:hover, input[type="submit"]:hover {
+    background-color: #a0a0a0 !important;
+    border: 2px inset #a0a0a0 !important;
+  }
+  
+  /* Re-hide the greedy nav toggle even though it's technically a button */
+  button.greedy-nav__toggle,
+  .greedy-nav button {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+  }
+  
+  code, pre {
+    background-color: #f0f0f0 !important;
+    border: 1px solid #000080 !important;
+    font-family: "Courier New", Courier, monospace !important;
+    color: #000000 !important;
+  }
+  
+  ul, ol {
+    margin-left: 30px !important;
+  }
+  
+  li {
+    margin: 5px 0 !important;
+  }
+  
+  blockquote {
+    border-left: 4px solid #000080 !important;
+    background-color: #f0f0f0 !important;
+    padding: 10px !important;
+    margin: 10px 0 !important;
+    font-style: italic !important;
+  }
+  
+  hr {
+    border: none !important;
+    border-top: 2px solid #000080 !important;
+    margin: 20px 0 !important;
+  }
+  
+  table {
+    border: 2px solid #000080 !important;
+    border-collapse: collapse !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  
+  th, td {
+    border: 1px solid #000080 !important;
+    padding: 5px 10px !important;
+    background-color: #ffffff !important;
+  }
+  
+  th {
+    background-color: #c0c0c0 !important;
+    font-weight: bold !important;
+    color: #000080 !important;
+  }
+  
+  strong {
+    color: #000080 !important;
+  }
+  
+  /* ==========================================================================
+     10. ARCHIVE & POST LISTINGS
+     ========================================================================== */
+  
+  .archive__item {
+    border-bottom: 1px dotted #000080 !important;
+    padding: 10px 0 !important;
+    background-color: #ffffff !important;
+  }
+  
+  .archive__item-title a {
+    color: #0000ff !important;
+    font-weight: bold !important;
+  }
+  
+  .archive__item-excerpt {
+    color: #000000 !important;
+    font-style: italic !important;
+  }
+  
+  .archive__item-teaser {
+    border: 1px solid #000080 !important;
+  }
+  
+  /* ==========================================================================
+     11. SIDEBAR NAVIGATION (docs-style)
+     ========================================================================== */
+  
+  .nav__list {
+    background-color: #000080 !important;
+  }
+  
+  .nav__list .nav__items {
+    background: transparent !important;
+  }
+  
+  .nav__item a {
+    color: #ffff00 !important;
+    padding: 5px 10px !important;
+    display: block !important;
+  }
+  
+  .nav__item a:hover {
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+  }
+  
+  .nav__sub-title {
+    color: #ffff00 !important;
+    background: #000060 !important;
+    border-bottom: 1px solid #ffff00 !important;
+  }
+  
+  /* ==========================================================================
+     12. BACKGROUND CONSISTENCY
+     ========================================================================== */
+  
+  body > div,
+  .wrapper,
+  .site-wrapper,
+  .container,
+  .browser-upgrade,
+  .initial-content,
+  .search-content {
+    background-color: #c0c0c0 !important;
+  }
+  
+  .masthead,
+  .masthead__inner-wrap,
+  .masthead__menu,
+  .greedy-nav {
+    background: #000080 !important;
+    background-color: #000080 !important;
+  }
+  
+  .page,
+  .archive,
+  .page__inner-wrap,
+  .page__content {
+    background-color: #ffffff !important;
+  }
+  
+  .sidebar {
+    background-color: #e0e0e0 !important;
+  }
+  
+  /* ==========================================================================
+     13. CLASSIC 90s SCROLLBAR
+     ========================================================================== */
+  
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #c0c0c0;
+    border: 1px solid #000080;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #808080;
+    border: 1px solid #000080;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #606060;
+  }
+  
+  /* ==========================================================================
+     14. TAXONOMY, PAGINATION, FEATURES, TOC, RELATED, NOTICES
+     ========================================================================== */
+  
+  .taxonomy__section,
+  .taxonomy__index {
+    background-color: #ffffff !important;
+  }
+  
+  .taxonomy__index a {
+    color: #0000ff !important;
+  }
+  
+  .pagination {
+    background-color: #c0c0c0 !important;
+  }
+  
+  .pagination a {
+    color: #0000ff !important;
+    border: 1px solid #000080 !important;
+    background-color: #ffffff !important;
+  }
+  
+  .pagination a:hover {
+    background-color: #ffff00 !important;
+  }
+  
+  .pagination .current {
+    background-color: #000080 !important;
+    color: #ffffff !important;
+  }
+  
+  .feature__wrapper {
+    background-color: #c0c0c0 !important;
+    border: 2px solid #000080 !important;
+  }
+  
+  .feature__item {
+    background-color: #ffffff !important;
+    border: 1px solid #000080 !important;
+  }
+  
+  .sidebar__right {
+    background-color: #e0e0e0 !important;
+    border: 2px dashed #000080 !important;
+  }
+  
+  .toc {
+    background-color: #e0e0e0 !important;
+  }
+  
+  .toc a {
+    color: #0000ff !important;
+  }
+  
+  .toc .active a {
+    color: #ff0000 !important;
+    font-weight: bold !important;
+  }
+  
+  .page__related {
+    background-color: #c0c0c0 !important;
+    border-top: 2px solid #000080 !important;
+  }
+  
+  .page__related-title {
+    color: #000080 !important;
+  }
+  
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    background-color: #f0f0f0 !important;
+    border: 2px solid #000080 !important;
+    color: #000080 !important;
+    font-family: "Times New Roman", Times, serif !important;
+  }
+  
+  /* ==========================================================================
+     15. IMAGES
+     ========================================================================== */
+  
+  img {
+    border: 1px solid #000080 !important;
+  }
+  
+  .masthead img,
+  .greedy-nav img,
+  .social-icons img,
+  .fa, .fas, .fab, .far,
+  .ai {
+    border: none !important;
+  }
+  
+  .author__avatar img {
+    border: 3px solid #000080 !important;
+  }
+  
+  /* ==========================================================================
+     16. FONT AWESOME ICONS — Ensure they render correctly
+     ========================================================================== */
+  
+  .fa, .fas, .fab, .far, .ai {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Social icons in footer */
+  .page__footer-follow .social-icons .fa,
+  .page__footer-follow .social-icons .fas,
+  .page__footer-follow .social-icons .fab {
+    color: #000080 !important;
+  }
+  
+  .page__footer-follow a {
+    color: #0000ff !important;
+  }
+  
+  .page__footer-follow a:hover {
+    color: #ff0000 !important;
+    background-color: #ffff00 !important;
+  }

@@ -16,9 +16,9 @@ redirect_from:
 
 ## About
 
-I completed my PhD in Computer Science at the [University of Limerick](https://www.ul.ie) and hold a BTech from [Delhi Technological University](http://www.dtu.ac.in). I work on graph neural networks and medical image analysis. Currently working as an AI/ML Engineer at Siemens Healthineers.
+I completed my PhD in Computer Science at the [University of Limerick](https://www.ul.ie) and hold a BTech from [Delhi Technological University](http://www.dtu.ac.in). I work on graph neural networks and medical image analysis.
 
-For detailed professional information, check my [LinkedIn](https://www.linkedin.com/in/aryan-singh-902115156).
+<!-- For detailed professional information, check my [LinkedIn](https://www.linkedin.com/in/aryan-singh-902115156). -->
 
 ## Education
 
@@ -29,7 +29,6 @@ For detailed professional information, check my [LinkedIn](https://www.linkedin.
 
 - **Traveling On Google Earth** - Exploring new places
 - **Self-hosting** - Running my own servers and services
-- **Nothing much** - !
 
 ## Research
 

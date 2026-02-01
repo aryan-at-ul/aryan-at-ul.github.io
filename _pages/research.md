@@ -28,17 +28,9 @@ Investigating subgraph clustering techniques combined with atom learning approac
 ### 4. Graph-based Feature Extraction
 Developing compact and capable models using graph neural networks with edge convolution techniques for medical image classification, focusing on improved spectral feature analysis and class discrimination.
 
-## Key Publications
-
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
 
 ## Research Highlights
 
